@@ -1,116 +1,145 @@
-body{
-    background-color: #F3F5F7;
+body {
+  background-color: #f3f5f7;
 }
 
 :root {
-    --blue: #3EA1DB;
-    --blue-dark: #574AE8;
-    --white: #FFF;
-  
-    --title: #313131;
-    --text: #B6B6B6;
-    
-    --linear: linear-gradient(90deg, #574AE8 0%, #3EA1DB 100%);
+  --blue: #3ea1db;
+  --blue-dark: #574ae8;
+  --white: #fff;
+
+  --title: #313131;
+  --text: #b6b6b6;
+
+  --linear: linear-gradient(90deg, #574ae8 0%, #3ea1db 100%);
 }
 
-@font-face {
-    font-family: Lexend Deca;
-    src: url(/Assets//fontes/LexendDeca-Regular.ttf);
- }
-
- @font-face {
-    font-family: Inter;
-    src: url(/Assets//fontes/Inter-Medium.ttf);
- }
-
-
-.header{
-    background-image: var(--linear);
+.header {
+  background-image: var(--linear);
 }
 
-.texto-header{
-    color: #FFFfff;
-    font-family: Lexend Deca;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 30px;
+.texto-header {
+  color: #ffffff;
+  font-family: "Lexend Deca", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
 }
 
-.header-search{
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 5px;
+.header-search {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  border: 0;
+  color: #ffffff;
 }
 
-.texto-search{
-    font-family: Inter;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
-    color: #FFFfff;
+.header-search-icon {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  height: 50px;
+  color: #ffffff;
+  border: 0;
 }
 
-.topico-blog{
-    background: #FFFFFF;
-    box-shadow: 0px 0px 10px rgba(19, 19, 31, 0.05);
-    border-radius: 5px;
+.form-control:focus {
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
 }
 
-.span-data{
-    font-family: Lexend Deca;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    color: #B6B6B6;
+.btn:hover {
+  color: #ffffff;
 }
 
-.titulo-post{
-    font-family: Lexend Deca;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 26px;
-    line-height: 32px;
-    color:#313131;
+.form-control::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #ffffff;
+  opacity: 1; /* Firefox */
 }
 
-.paragrafo-post{
-    font-family: Lexend Deca;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 32px;
-    color: #B6B6B6;
+.form-control:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #ffffff;
 }
 
-.fa-heart{
-    color: #574AE8;
+.form-control::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #ffffff;
+}
+
+.texto-search {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.topico-blog {
+  background: #ffffff;
+  box-shadow: 0px 0px 10px rgba(19, 19, 31, 0.05);
+  border-radius: 5px;
+}
+
+.span-data {
+  font-family: "Lexend Deca", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: #b6b6b6;
+}
+
+.titulo-post {
+  font-family: "Lexend Deca", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 32px;
+  color: #313131;
+}
+
+.paragrafo-post {
+  font-family: "Lexend Deca", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  color: #b6b6b6;
+}
+
+.fa-heart {
+  color: #574ae8;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 @media screen and (max-width: 600px) {
-    .texto-header{
-        font-size: 18px;
-        line-height: 22px;
-    }
+  .texto-header {
+    font-size: 18px;
+    line-height: 22px;
+  }
 
-    .texto-search{
-        font-size: 14px;
-        line-height: 17px;
-    }
+  .texto-search {
+    font-size: 14px;
+    line-height: 17px;
+  }
 
-    .span-data{
-        font-size: 14px;
-        line-height: 17px;
-    }
+  .span-data {
+    font-size: 14px;
+    line-height: 17px;
+  }
 
-    .titulo-post{
-        font-size: 18px;
-        line-height: 22px;
-    }
+  .titulo-post {
+    font-size: 18px;
+    line-height: 22px;
+  }
 
-    .paragrafo-post{
-        font-size: 14px;
-        line-height: 26px;
-    }
-
+  .paragrafo-post {
+    font-size: 14px;
+    line-height: 26px;
+  }
 }
